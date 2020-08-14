@@ -44,10 +44,6 @@ button {
     background-color: #f2f2f2;
     padding: 1%;
 }
-
-.skills h1 {
-    text-align: center;
-}
 .row {
     padding: 1%;
 }
@@ -93,69 +89,9 @@ body {
   }
 }
 /* END SKILL CARDS */
-
-/* BEGIN WORK CARDS */
-* {
-  box-sizing: border-box;
-}
-
-.work {
-    background-color: #f2f2f2;
-    padding: 1%;
-}
-
-.work h1 {
-    text-align: center;
-}
-.row {
-    padding: 1%;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.work .column {
-  width: 100%;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {
-    margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  padding-bottom: 0%;
-}
-
-/* Style the counter cards */
-.work .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: left;
-  background-color: white;
-  height: 200px;
-}
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-/* END WORK CARDS */
-
-
-/* FOOTER */
 footer {
   background-color: black;
-  padding: 10px;
+  padding: 5px;
   color: white;
 }
 footer ul {
@@ -164,5 +100,5 @@ footer ul {
 }
 footer li {
   display: inline-block;
-  padding: 5px;
+  padding: 0px 7px;
 }
