@@ -1,6 +1,6 @@
 body {
     background-color: #373738;
-    display: contents
+    display: contents;
 }
 
 header {
@@ -17,7 +17,6 @@ header {
 nav {
     padding: 1%;
 }
-
 li {
     padding-left: 25px;
 }
@@ -26,35 +25,27 @@ li {
 }
 .container {
     height: auto;
-    display: flex;
-    align-items: center;
 }
 .article {
-    position: absolute;
     width: 100%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    
+    padding: 20px;    
 }
 .left-half {
     background-color: #373738;
     color: #f2f2f2;
-    position: absolute;
+    float: left;
     left: 0px;
     width: 50%;
     padding: 5%;
     padding-left: 10%;
     height: 200px;
-    margin: auto;
 }
 * {
   box-sizing: border-box;
 }
 .right-half {
     background-color: #373738;
-    position: absolute;
+    float: right;
     right: 0px;
     width: 50%;
     padding: 5%;
@@ -62,11 +53,44 @@ li {
     height: 200px;
     margin: auto;
 }
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 footer {
-    position:inherit;
-    bottom: 0;
+    position: absolute;
     background-color: black;
     padding: 2%;
+    bottom: 0;
     color: #f2f2f2;
     width: 100%;
 }
